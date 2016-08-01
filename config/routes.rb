@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'coaching/ask'
+
+  # url/coaching/answer and url/anwser are routed to the same controller
+  get 'coaching/answer'
+  get '/answer', to: 'coaching#answer'
+
+  root "coaching#ask"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

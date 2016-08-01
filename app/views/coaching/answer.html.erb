@@ -1,0 +1,28 @@
+<h1>Coaching#answer</h1>
+<p>Find me in app/views/coaching/answer.html.erb</p>
+
+<h2><strong>Stupid Coaching</strong></h2>
+
+
+<div class="wrapper-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4 col-xs-offset-4">
+        <div class="wrapper-question text-center">
+          <p><strong><%= @question %></strong></p>
+          <p>- You</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-4">
+          <div class="wrapper-coach-answer text-center">
+            <p><strong><%= @coach_answer %></strong></p>
+            <p>- Coach</p>
+            <%= link_to "Another question?", coaching_ask_path %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
